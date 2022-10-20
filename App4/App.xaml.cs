@@ -17,6 +17,7 @@ namespace App4
             MainPage = new NavigationPage(new Inicio());
         }
 
+
         protected override void OnStart()
         {
         }

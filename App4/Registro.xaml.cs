@@ -12,9 +12,10 @@ namespace App4
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
-        public Registro()
+        public Registro(string usuario, string clave)
         {
             InitializeComponent();
+            lblUsuario.Text = "El usuario es:" + usuario+" Su clave es:"+clave;
         }
 
         private void Button_Clicked(object sender, EventArgs e)

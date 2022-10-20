@@ -5,6 +5,7 @@
     <ContentPage.Content>
         <StackLayout Padding="40"  VerticalOptions="Fill" HorizontalOptions="Center">
             <Label Text="Sistema de Calificacion uisrael ver 1.0" />
+            <Label x:Name="lblUsuario" Text="" HorizontalTextAlignment="End" FontSize="Medium" />
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>

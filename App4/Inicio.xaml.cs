@@ -17,16 +17,16 @@ namespace App4
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            string usuario = "Armando";
-            string password = "12345";
+            string usuario = "estudiante2022";
+            string password = "uisrael2022";
             string tusuario = txtUsuario.Text;
             string tpassword = txtClave.Text;
             if (usuario == tusuario & password == tpassword)
             {
                 DisplayAlert("Alerta", "Usuario Correcto", "Cerrar");
-                Navigation.PushAsync(new Registro());
+                await Navigation.PushAsync(new Registro(txtUsuario.Text, txtClave.Text));
             }
             else
             {
