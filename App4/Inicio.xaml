@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Inicio">
+    <ContentPage.Content>
+        <StackLayout  Padding="40"  VerticalOptions="Fill">
+            <Label Text="Sistema de Registro de Notas uisrael ver 1.0"/>
+            <Image Source="uisrael.jpg" WidthRequest="300" MinimumHeightRequest="180"></Image>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            
+            <Label Text="Ingrese el Usuario" Grid.Row="0" Grid.Column="0"/>
+
+                <Entry x:Name="txtUsuario" Placeholder="Usuario" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="0" Grid.Column="1"/>
+             <Label Text="Ingrese contraseña" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtClave" Placeholder="Clave" IsPassword="True" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+            <Button
+                    VerticalOptions="Center"
+                    Text="Login"
+                    TextColor="White"
+                    BackgroundColor="Blue"
+                    BorderColor="LemonChiffon"
+                    BorderWidth="1.5"
+                    CornerRadius="50" Clicked="Button_Clicked">
+            </Button>
+            <Label HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

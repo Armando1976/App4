@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Registro">
+    <ContentPage.Content>
+        <StackLayout Padding="40"  VerticalOptions="Fill" HorizontalOptions="Center">
+            <Label Text="Sistema de Calificacion uisrael ver 1.0" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Parcial 1" Grid.Row="0" VerticalOptions="Center"/>
+                <Label Text="Nota de seguimiento 1" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtParcial1" Placeholder="Parcial1" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="1" Grid.Column="1"/>
+                
+                <Label Text="Nota de examen 1" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtExamen1" Placeholder="Examen1" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Nota de parcial 1" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtfinal1" Placeholder="Final1" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="3" Grid.Column="1"/>
+                
+                <Button VerticalOptions="Center" Text="Calculo Parcial 1" TextColor="White" BackgroundColor="Blue" BorderColor="LemonChiffon" BorderWidth="1.5" CornerRadius="50" Clicked="Button_Clicked" Grid.Row="4" />
+                
+                <Label Text="Parcial 2" Grid.Row="5"/>
+                <Label Text="Nota de seguimiento 2" Grid.Row="6" Grid.Column="0"/>
+                <Entry x:Name="txtParcial2" Placeholder="Parcial2" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="6" Grid.Column="1"/>
+
+                <Label Text="Nota de examen 2" Grid.Row="7" Grid.Column="0"/>
+                <Entry x:Name="txtExamen2" Placeholder="Examen2" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="7" Grid.Column="1"/>
+
+                <Label Text="Nota final 2" Grid.Row="8" Grid.Column="0"/>
+                <Entry x:Name="txtFinal2" Placeholder="Final2" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="8" Grid.Column="1"/>
+                <Button VerticalOptions="Center" Text="Calculo Parcial 2" TextColor="White" BackgroundColor="Blue" BorderColor="LemonChiffon" BorderWidth="1.5" CornerRadius="50" Clicked="Button_Clicked_1" Grid.Row="9" />
+                
+                <Label Text="Nota final" Grid.Row="10" Grid.Column="0"/>
+                <Entry x:Name="txtfinal" Placeholder="Final" TextColor="Blue" PlaceholderColor="Gray" Grid.Row="10" Grid.Column="1"/>
+                <Button VerticalOptions="Center" Text="Calculo Final" TextColor="White" BackgroundColor="Blue" BorderColor="LemonChiffon" BorderWidth="1.5" CornerRadius="50" Clicked="Button_Clicked_2" Grid.Row="11" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
